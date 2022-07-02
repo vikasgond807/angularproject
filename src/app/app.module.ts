@@ -7,7 +7,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PostCreateComponent } from './post/post-create/post-create.component';
-import {MatInputModule } from '@angular/material/input';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card'
+import {MatButtonModule} from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,9 @@ import {MatInputModule } from '@angular/material/input';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

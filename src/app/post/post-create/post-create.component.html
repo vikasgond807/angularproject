@@ -1,8 +1,11 @@
-
-
 <h3>Our Post Create-Component </h3>
-<textarea [(ngModel)]="EnteredValue"></textarea> 
-<!-- [value]="newPost" #postInput  -->
+<mat-card>
+    <mat-form-field>
 
-<button (click)="AddPost()">Save </button>
+        <textarea matInput [(ngModel)]="EnteredValue"></textarea>
+        <!-- [value]="newPost" #postInput  -->
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="AddPost()">Save </button>
+</mat-card>
+
 <p>{{newPost}}</p>
